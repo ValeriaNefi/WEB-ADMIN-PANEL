@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+body{
+    background-image: url(allimg/login\ background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#form-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+
+header{
+    color: white;
+    font-family: 'Lora';
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    letter-spacing: 2px;
+}
+.inputan {
+    padding: 10px 0 10px 45px;
+}
+
+i{
+    position: relative;
+    color: white ;
+    left: 33px;
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+
+.input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    padding: 0 0 0 45px;
+    background: rgba(255, 255, 255, 0.1);
+} 
+
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 75%;
+    padding: 10px 0 10px 0;
+    margin: 10px 0 0 65px;
+}
+
+.hasil {
+    padding: 3px;
+}

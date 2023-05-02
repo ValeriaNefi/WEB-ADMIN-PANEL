@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+
+body {
+    width:100%;
+}
+
+
+/*UNTUK NAVIGASI/HEADER*/
+
+/*---------------------------------------HEADER ------------------------------------------------------------*/
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 90px;
+    background-color: rgb(112, 112, 112);
+    box-shadow: 0 5px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left:0;
+}
+                        /*----------------------------NAVBAR------------------------------------------------*/
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color:rgb(212, 212, 243);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: rgb(212, 212, 243);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+/*---------------------------------------------------DASBOARD-----------------------------------------------*/
+
+/*-------------------kategori (dasboard)--------------------------------*/
+.section-p1 {
+    padding: 40px 80px;
+}
+
+#box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  /*  border: dashed #c5cac6;*/
+
+}
+
+/*-------------------box1------------------*/
+
+#box .box1 {
+    width: 400px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px 15px;
+    margin-left: 120px;
+    background-color: rgb(209, 206, 206);
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+}
+
+#box .box1:hover{
+    background-color: rgb(172, 170, 170);
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#box .box1 .icon {
+    align-items: start;
+    padding-left: 25px;
+}
+
+#box .box1 .ket h3 {
+    padding-left: 55px;
+    font-size: 33px;
+    font-family: 'Space Grotesk';
+}
+
+#box .box1 .ket p{
+    padding-left: 55px;
+    font-size: 18px;
+    font-family: 'Space Grotesk';
+    color: rgb(9, 58, 9);
+    font-family: 'Space Grotesk';
+}
+
+#box .box1 .ket p a{
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(9, 58, 9);
+
+}
+
+/*----------------box2----------------*/
+
+
+#box .box2 {
+    width: 400px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px 15px;
+    margin-left: 150px;
+    background-color: rgb(209, 206, 206);
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+}
+
+#box .box2:hover{
+    background-color: rgb(172, 170, 170);
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#box .box2 .icon {
+    align-items: start;
+    padding-left: 25px;
+}
+
+#box .box2 .ket h3 {
+    padding-left: 55px;
+    font-size: 33px;
+    font-family: 'Space Grotesk';
+}
+
+#box .box2 .ket p{
+    padding-left: 55px;
+    font-size: 18px;
+    font-family: 'Space Grotesk';
+    color: rgb(9, 58, 9);
+    font-family: 'Space Grotesk';
+}
+
+#box .box2 .ket p a{
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(9, 58, 9);
+
+}
+
+/*-----------------------------------------KATEGORI PAGE-----------------------------------------------------*/
+
+/*--------------add-------------*/
+#tambah{
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+#tambah .placeholder{
+    padding-top: 20px;
+}
+
+#tambah input[type=text] {
+    width: 82%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+#tambah .btn-tambah{
+  width: 70px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.alert-Failed{
+  width: 30%;
+  margin-left: 100px;
+  background-color: #af4c4c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.alert-sukses{
+    width: 30%;
+    margin-left: 100px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+/*---------------data--------------*/
+#categories{
+    padding-top: 50px;
+}
+
+#categories .tabelKategori{
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    align-items: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+th, tr:nth-child(even){background-color: #f2f2f2}
+
+tr .kategori-detail{
+    color: #0f570f;
+}
+
+
+
+
+
+/*--------------------------------------------------SMALL BANNER---------------------------------------------------*/
+#news {
+    display:flex;
+    flex-direction: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(allimg/banner\ bwah.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e04;
+}
+
+#news h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(129, 63, 15);
+}
+
+#news p{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(146, 108, 73);
+}
+
+#news p span {
+    color: rgb(14, 80, 14);
+}

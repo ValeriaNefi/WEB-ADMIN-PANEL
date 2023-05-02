@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@600&display=swap');
+
+
+
+
+#detail-kategori{
+    margin-top: 50px;
+    margin-left: 80px;
+    
+}
+
+#detail-kategori h2{
+    font-family: 'Playfair Display';
+    font-size: 40px;
+}
+
+#detail-kategori label{
+    font-family: 'Pathway Extreme';
+    font-size: 25px;
+}
+
+#detail-kategori .edit{
+    padding-top: 20px;
+}
+
+#detail-kategori .isi input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    font-size: 16px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+#detail-kategori .btn-edit{
+    width: 70px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #detail-kategori .btn-edit:hover{
+    background-color: #1d661f;
+    transition: ease-in-out 0.2s;
+  }
+
+  #detail-kategori .btn-delete{
+    width: 70px;
+    background-color: #bb4f4f;
+    color: white;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #detail-kategori .btn-delete:hover{
+    background-color: #661d1d;
+    transition: ease-in-out 0.2s;
+  }
+
+  .alert-Failed{
+    width: 30%;
+    margin-left: 100px;
+    background-color: #af4c4c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .alert-sukses{
+    width: 30%;
+    margin-left: 100px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

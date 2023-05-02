@@ -1,0 +1,1499 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-family: 'reem kufi fun';
+    font-size: 16px;
+    color: rgb(153, 117, 70);
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+
+body {
+    width:100%;
+}
+
+
+/*UNTUK NAVIGASI/HEADER*/
+
+/*---------------------------------------HEADER ------------------------------------------------------------*/
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 90px;
+    background-color: rgb(112, 112, 112);
+    box-shadow: 0 5px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left:0;
+}
+                        /*----------------------------NAVBAR------------------------------------------------*/
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color:rgb(212, 212, 243);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: rgb(212, 212, 243);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/*-----------------------------------------------BERANDA-------------------------------------------------------------*/
+#beranda{
+    background-image: url(allimg/halaman\ home/shop.png);
+    height: 125vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 80px;
+    padding-bottom: 60vh;
+    padding-left: 40vh;
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#beranda h3{
+    padding-bottom: 15px;
+    padding-top: 5px;
+    color: white;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#beranda h3 b{
+    font-size: 42px;
+}
+#beranda h2{
+    color:rgb(253, 253, 145);
+    font-size: 29px;
+}
+#beranda button{
+    background-image: url(allimg/halaman\ home/text1.png);
+    background-color: transparent;
+    color:black;
+    border:0;
+    padding: 23px 80px 20px 80px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 70px;
+}
+
+#beranda button a{
+    text-decoration: none;
+    color: black;
+}
+
+/*-----------------------------------------FEATURE BOX---------------------------------------------------------*/
+/*h6 {
+    font-weight: 700;
+    font-size: 12px;
+}*/
+.section-p1 {
+    padding: 40px 80px;
+}
+.section-m1 {
+    margin: 40px 0;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+}
+
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    background-color: rgb(236, 195, 219);
+}
+
+#feature .fe-box:nth-child(2) h6 { 
+    background-color: rgb(252, 187, 126);
+}
+#feature .fe-box:nth-child(3) h6 { 
+    background-color: rgb(235, 229, 150);
+}
+#feature .fe-box:nth-child(4) h6 { 
+    background-color: rgb(172, 216, 233);
+}
+#feature .fe-box:nth-child(5) h6 { 
+    background-color: rgb(197, 243, 170);
+}
+#feature .fe-box:nth-child(6) h6 { 
+    background-color: rgb(241, 154, 132);
+}
+
+
+/*-------------------------------------------------------HOT PRODUCT---------------------------------------------*/
+p {
+    font-family: 'reem kufi fun';
+    font-size: 16px;
+    color: rgb(153, 117, 70);
+    margin: 15px 0 20px 0;
+}
+
+#hotseller {
+    text-align: center;
+}
+
+#hotseller h2{
+    font-family: 'Space Grotesk';
+    font-size: 40px;
+    background-color: rgb(255, 202, 133);
+    border-radius: 20px;
+}
+
+#hotseller p{
+    font-size: 20px;
+}
+
+#hotseller .awal-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#hotseller .awal{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px ;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0 0,0.02);
+    margin: 15px 0;
+    transition: 0.02s ease;
+    position: relative;
+}
+
+#hotseller .awal:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#hotseller .awal img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#hotseller .awal .deskripsi{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#hotseller .awal .deskripsi span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#hotseller .awal .deskripsi h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#hotseller .awal .deskripsi i{
+    font-size: 12px;
+    color:rgb(243, 181, 25);
+}
+
+#hotseller .awal .deskripsi h4{
+    padding-top: 7px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#hotseller .awal .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color:#088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+/*------------------------------------------------SUMMER-----------------------------------------------------*/
+
+#summer {
+    text-align: center;
+}
+
+#summer h2{
+    font-family: 'Space Grotesk';
+    font-size: 40px;
+    background-color: rgb(255, 202, 133);
+    border-radius: 20px;
+}
+
+#summer p{
+    font-size: 20px;
+    
+}
+
+#summer .awal-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#summer .awal{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px ;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0 0,0.02);
+    margin: 15px 0;
+    transition: 0.02s ease;
+    position: relative;
+}
+
+#summer .awal:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#summer .awal img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#summer .awal .deskripsi{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#summer .awal .deskripsi span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#summer .awal .deskripsi h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#summer .awal .deskripsi i{
+    font-size: 12px;
+    color:rgb(243, 181, 25);
+}
+
+#summer .awal .deskripsi h4{
+    padding-top: 7px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#summer .awal .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color:#088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+/*--------------------------------------------------SMALL BANNER---------------------------------------------------*/
+#news {
+    display:flex;
+    flex-direction: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(allimg/banner\ bwah.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e04;
+}
+
+#news h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(129, 63, 15);
+}
+
+#news p{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(146, 108, 73);
+}
+
+#news p span {
+    color: rgb(14, 80, 14);
+}
+
+/*#news .form{
+    padding-right: 100px;
+    display: flex;
+    width: 40%;
+}
+
+/*#news input{
+    height: 3.125rem;
+    padding: 0 2.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+
+#news button .sign {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;     /*atas bawah= 15px kanan kiri = 30px*/
+    /*color: white;
+    background-color: olive;
+    white-space: nowrap;
+    border-radius: 4px;
+    border-top-left-radius: 0; /*biar pojok kiri atas sg sebelahan sama text g spacing atau ga keliatan nak beda kolom*/
+   /* border-bottom-left-radius: 0;/*biar pojok  kiri bawah sg sebelahan sama text g spacing atau ga keliatan nak beda kolom*/
+    /*cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}*/
+
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+#small-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#small-banner .banner-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(allimg/sale.jpg);
+    width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+/*------------------------------------------------BANNER HALAMAN AWAL PAGE PRODUCTS----------------------------------*/
+#product {
+    background-image: url(allimg/Halaman\ Depan.jpg);
+    height:90vh;
+    width:100%;
+    background-size: cover;
+    padding-bottom: 60vh;
+    padding-left: 150vh;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#product h3{
+    color: rgb(23, 68, 23);
+    font-size: 50px;
+    font-family: 'Comic San MS';
+}
+
+#product p {
+    color: rgb(23, 68, 23);
+    padding-left: 70px;
+    font-size: 20px;
+    font-family: 'Comic San MS';
+}
+
+/*--------------------Kategori------------------------------*/
+#kategori{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#kategori .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(allimg/kategori/tv.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    padding-block-end: 180px;
+    letter-spacing: 2px;
+}
+#kategori .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(allimg/kategori/speaker\ active.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    padding-block-end: 180px;
+    letter-spacing: 2px;
+}
+
+#kategori .banner-box h2{
+    color: rgb(255, 202, 133);
+    font-size: 28px;
+    font-weight: 800;
+    text-shadow: 0 -1px black, 1px 0px black, 0px 1px black, -1px 0px black;
+}
+#kategori .banner-box2 h2{
+    color: rgb(212, 171, 228);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#kategori .banner-box span{
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black;
+    padding-bottom: 10px;
+}
+#kategori .banner-box2 span{
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+button.white{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    padding: 9px 15px;
+    color: white;
+   /* text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black;*/
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s;
+}
+button.white a{
+    text-decoration: none;
+    color: white;
+}
+#kategori .banner-box:hover button{
+    background-color: rgb(173, 101, 7);
+    border: 1px solid rgb(173, 101, 7);
+}
+
+button.purple {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    padding: 9px 15px;
+    color: white;
+   /* text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black;*/
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid rgb(245, 215, 242);
+    outline: none;
+    transition: 0.2s;
+}
+button.purple a{
+    text-decoration: none;
+    color: white;
+}
+
+#kategori .banner-box2:hover button{
+    background-color: rgb(197, 128, 197);
+    border: 1px solid rgb(197, 128, 197);
+}
+
+/*===========kategori 2===========*/
+
+#kategori2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#kategori2 .banner-box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(allimg/kategori/kulkas\ 2.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    padding-top: 50px;
+    padding-block-end: 180px;
+    letter-spacing: 2px;
+    padding-bottom: 60px;
+}
+#kategori2 .banner-box3 span{
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black;
+    padding-bottom: 10px;
+}
+button.grey {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    padding: 9px 15px;
+    color: white;
+   /* text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black;*/
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid rgb(245, 215, 242);
+    outline: none;
+    transition: 0.2s;
+}
+button.grey a{
+    text-decoration: none;
+    color: white;
+}
+#kategori2 .banner-box3:hover button{
+    background-color: rgb(168, 159, 147);
+    border: 1px solid rgb(168, 159, 147);
+}
+
+#kategori2 .banner-box4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(allimg/kategori/fan2.jpg);
+    min-width:30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    padding-block-end: 180px;
+    letter-spacing: 2px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+#kategori2 .banner-box4 span{
+    font-family: 'Signika Negative', sans-serif;
+    color: rgb(223, 176, 142);
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black;
+    padding-bottom: 30px;
+}
+button.grey2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    padding: 9px 15px;
+    color: black;
+   /* text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black;*/
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid rgb(12, 12, 12);
+    outline: none;
+    transition: 0.2s;
+}
+button.grey2 a{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+#kategori2 .banner-box4:hover button{
+    background-color: rgb(168, 159, 147);
+    border: 1px solid rgb(168, 159, 147);
+}
+
+#kategori2 .banner-box5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(allimg/kategori/humidifier.jpg);
+    min-width:30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    padding-top: 10px;
+    padding-block-end: 180px;
+    letter-spacing: 2px;
+    padding-bottom: 60px;
+}
+#kategori2 .banner-box5 span{
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black;
+    padding-bottom: 10px;
+}
+button.grey3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    padding: 9px 15px;
+    color: white;
+   /* text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black;*/
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid black;
+    outline: none;
+    transition: 0.2s;
+}
+button.grey3 a{
+    text-decoration: none;
+    color: black;
+}
+#kategori2 .banner-box5:hover button{
+    background-color: rgb(168, 159, 147);
+    border: 1px solid rgb(168, 159, 147);
+}
+
+/*-----------------------------------kategori 3-----------------------------------*/
+#kategori3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#kategori3 .banner-box6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(allimg/kategori/ac.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    padding-block-end: 180px;
+    letter-spacing: 2px;
+}
+#kategori3 .banner-box7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(allimg/kategori/mc.jpg);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    padding-block-end: 180px;
+    letter-spacing: 2px;
+}
+
+#kategori3 .banner-box6 h2{
+    color: rgb(122, 76, 14);
+    font-size: 28px;
+    font-weight: 800;
+  /*  text-shadow: 0 -1px black, 1px 0px black, 0px 1px black, -1px 0px black;*/
+}
+#kategori3 .banner-box7 h2{
+    color: rgb(21, 58, 21);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#kategori3 .banner-box6 span{
+    font-family: 'Signika Negative', sans-serif;
+    color: rgb(167, 111, 38);
+    font-size: 15px;
+    font-weight: 500;
+   /* text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black;*/
+    padding-bottom: 10px;
+}
+#kategori3 .banner-box7 span{
+    font-family: 'Signika Negative', sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+button.ac{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    padding: 9px 15px;
+    color: rgb(8, 8, 8);
+   /* text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black;*/
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid black;
+    outline: none;
+    transition: 0.2s;
+}
+button.ac a{
+    text-decoration: none;
+    color: black;
+}
+#kategori3 .banner-box6:hover button{
+    background-color: rgb(112, 66, 7);
+    border: 1px solid rgb(112, 66, 7);
+}
+
+button.green {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    padding: 9px 15px;
+    color: white;
+   /* text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black;*/
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid rgb(245, 215, 242);
+    outline: none;
+    transition: 0.2s;
+}
+button.green a{
+    text-decoration: none;
+    color: white;
+}
+
+#kategori3 .banner-box7:hover button{
+    background-color: rgb(123, 195, 218);
+    border: 1px solid rgb(123, 195, 218);
+}
+
+
+/*--------------------------------------------------------PRODUKS----------------------------------------------------*/
+
+/*untuk AC*/
+#ac {
+    text-align: center;
+}
+
+#ac h2 {
+    font-family: 'roboto';
+    font-size: 45px;
+    background-color: rgb(255, 202, 133);
+    border-radius: 20px;
+}
+
+#ac .awal-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#ac .awal {
+    width:23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor:pointer;
+    box-shadow: 20px 20px 30px rgba (0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#ac .awal:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#ac .awal img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#ac .awal .deskripsi {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#ac .awal .deskripsi span {
+    color: #606063;
+    font-size: 12px;
+}
+
+#ac .awal .deskripsi span a{
+    text-decoration: none;
+    color: #606063;
+}
+
+#ac .awal .deskripsi h5 {
+    padding-top: 7px;
+    font-size: 14px;
+}
+
+#ac .awal .deskripsi h5 a{
+    text-decoration: none;
+    color: black;
+}
+
+#ac .awal .deskripsi i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#ac .awal .deskripsi h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color:rgb(79, 143, 123);
+}
+
+#ac .awal .cart {
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: rgb(79, 143, 123);
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
+
+/*---------------single detail 1-------------*/
+#detail{
+    display: flex;
+    margin-top: 20px;
+}
+
+#detail .single-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.smallimg-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.smallimg-coll{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#detail .single-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#detail .single-details h4{
+    padding: 40px 0 20px 0;
+}
+
+#detail .single-details h2{
+    font-size: 26px;
+    padding-bottom: 13px;
+}
+
+#detail .single-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#detail .single-details input:focus{
+    outline: none;
+}
+
+button.add {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    padding: 13px 15px;
+    color: white;
+   /* text-shadow: 0px -1px black, 1px 0px black, 0px 1px black, -1px 0px black;*/
+    background-color: rgb(11, 105, 11);
+    border: 1px solid rgb(11, 105, 11);
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+}
+#detail .single-details span{
+    line-height: 25px;
+}
+
+
+#detail .single-details h6 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*-------------------------------------------------------Television-----------------------------------------*/
+#tv {
+    text-align: center;
+}
+
+#tv h2 {
+    font-family: 'roboto';
+    font-size: 45px;
+    background-color: rgb(255, 202, 133);
+    border-radius: 20px;
+}
+
+#tv .awal-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#tv .awal {
+    width:23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor:pointer;
+    box-shadow: 20px 20px 30px rgba (0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#tv .awal:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#tv .awal img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#tv .awal .deskripsi {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#tv .awal .deskripsi span {
+    color: #606063;
+    font-size: 12px;
+}
+
+#tv .awal .deskripsi h5 {
+    padding-top: 7px;
+    font-size: 14px;
+}
+
+#tv .awal .deskripsi i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#tv .awal .deskripsi h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color:rgb(79, 143, 123);
+}
+
+#tv .awal .cart {
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: rgb(79, 143, 123);
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
+/*----------------------------------------------------untuk kipas angin------------------------------------*/
+
+#fan {
+    text-align: center;
+}
+
+#fan h2 {
+    font-family: 'roboto';
+    font-size: 45px;
+    background-color:rgb(255, 202, 133);
+    border-radius: 20px;
+}
+
+#fan .awal-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#fan .awal {
+    width:23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor:pointer;
+    box-shadow: 20px 20px 30px rgba (0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#fan .awal:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#fan .awal img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#fan .awal .deskripsi {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#fan .awal .deskripsi span {
+    color: #606063;
+    font-size: 12px;
+}
+
+#fan .awal .deskripsi h5 {
+    padding-top: 7px;
+    font-size: 14px;
+}
+
+#fan .awal .deskripsi i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#fan .awal .deskripsi h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color:rgb(79, 143, 123);
+}
+
+#fan .awal .cart {
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: rgb(79, 143, 123);
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
+/*---------------------------------------------------------detail single product-------------------------------*/
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .singleproimg{
+    width: 40%;
+    margin-right: 50px;
+}
+
+#prodetails .singleprodetails{
+    float: right;
+}
+
+/*---------------------------------------------------------small banner--------------------------------------*/
+#small-banner h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'comic sans ms';
+}
+
+#small-banner h2 {
+    color:white;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#small-banner span {
+    color:white;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#page{
+    text-align: center;
+    padding: 40px 10px;
+    padding-top: 3px;
+}
+
+#page a{
+    text-decoration: none;
+    background-color:#606063;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color:white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+
+#page a:hover,
+#page a.active {
+    color: rgb(212, 212, 243);
+}
+
+#page a.active::after,
+#page a:hover::after{
+    content:"";
+    width:45%;
+    height:2px;
+    background-color: rgb(212, 212, 243);
+    bottom: -4px;
+    left:20px;
+}
+
+
+#business {
+    background-image: url(allimg/rumah.png);
+    height:90vh;
+    width:100%;
+    background-size: cover;
+    padding-bottom: 60vh;
+    padding-left: 100vh;
+    padding-top: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#business h3 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#business p {
+    font-size: 25px;
+    font-weight: 450;
+    align-content: center;
+}
+
+
+/*table*/
+#tabel {
+    text-align: center;
+    justify-content: center;
+}
+
+#tabel h3 {
+    font-family: 'roboto';
+    font-size: 45px;
+    background-color: rgb(53, 98, 124);
+    color: white;
+    border-radius: 20px;
+}
+
+#tabel p {
+    font-size: 25px;
+    font-family: 'roboto';
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width:50%;
+    position: relative;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: rgb(213, 218, 228);
+}
+
+tr:nth-child(even){
+    background-color: transparent;
+}
+
+/*===============================================MEMBERSHIP==============================================*/
+#member { 
+    background-image: url(allimg/membership/banner.jpg);
+    height:80vh;
+    width:100%;
+    background-size: cover;
+    padding-bottom: 60vh;
+    padding-left: 125vh;
+    padding-top: 0vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#member h3{
+    text-shadow: 5px 3px 2px rgb(175, 224, 168);
+    font-family: 'Yeseva One', cursive;
+    font-size: 60px;
+    padding-top: 40vh;
+    padding-right: 70px;
+    color:rgb(29, 66, 24);
+}
+
+#tier {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+    background: white;
+}
+
+#tier .icon {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: #eee;  
+    box-shadow: var(--box shadow);
+    border-radius: .5rem;
+}
+
+#tier .icon i{
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    background: whitesmoke;
+    color: var(--black);
+    text-align: center;
+}
+
+#tier .icon .isi h3{
+    color: rgb(14, 90, 30);
+    font-size: 20px;
+}
+
+#tier .icon:hover{
+    background:rgb(14, 90, 30);
+}
+#tier .icon:hover i{
+    color:rgb(14, 90, 30);
+}
+#tier .icon:hover .isi h3{
+    color:white;
+}
+
+/*-----------------------------------------------------kartu--------------------------------------------------*/
+#kartu h2{
+    font-family: 'Cormorant', serif;
+    font-size: 45px;
+    background-color: rgb(255, 202, 133);
+    border-radius: 20px;
+}
+
+#kartu .satu{
+    display: flex;
+}
+
+.satu img {
+    padding: 30px 30px 30px 30px;
+    border-radius: 50px;
+}
+
+.depan{
+    padding: 100px 30px 30px 20px;
+    text-align: justify;
+    align-items: center;
+}
+
+.depan h1{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    background: none;
+    font-size: 45px;
+    color: rgb(17, 53, 17);
+}
+
+.depan p{
+    font-family: 'Space Mono', monospace;
+    text-indent: 30px;
+    padding-bottom: 30px;
+    padding-bottom: 30px;
+    color: black;
+}
+
+/*belakang kartu*/
+#kartu2{
+    display: flex;
+}
+
+#kartu2 .belakang{
+    padding-top: 60px;
+}
+
+#kartu2 .belakang h1{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 20px;
+    background: none;
+    font-size: 45px;
+    color:rgb(17, 53, 17);
+}
+
+.belakang p{
+    font-family: 'Space Mono', monospace;
+    text-align: justify;
+    text-indent: 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    color: black;
+}
+
+.belakang p span {
+    color:rgb(89, 177, 89);
+}
+
+a.tbl-reg {
+    background-color: rgb(20, 66, 20);
+    border-radius: 20px;
+    margin-top: 35px;
+    padding: 15px 20px 15px 20px;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#kartu2 img{
+    padding: 30px 30px 30px 30px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------------START MEDIA QUERY------------------------------------------*/
